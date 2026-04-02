@@ -8,22 +8,24 @@ const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 export default function App() {
   const [filmes, setFilmes] = useState([]);
 
-  useEffect(() => {
-    const buscarDados = async () => {
+  
+useEffect(() => {
+  const buscarDados = async () => {
+    try {
       const dados = await axios.get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
+        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
       );
 
-      try {
-        setFilmes(dados.data.results);
-        console.log(dados.data.results);
-      } catch (erro) {
-        alert(`Houve um erro${erro}`);
-      }
-    };
-    buscarDados();
-  }, []);
+      setFilmes(dados.data.results);
+    } catch (erro) {
+      console.error(erro);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  buscarDados();
+}, []);
   return (
     <>
       <header>
