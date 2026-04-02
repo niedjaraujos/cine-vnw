@@ -1,16 +1,33 @@
-# React + Vite
+## 🎬 Cine WNW
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desenvolvida durante estudos em desenvolvimento front-end, com foco em consumo de APIs e renderização dinâmica de dados.
 
-Currently, two official plugins are available:
+## 📌 Contexto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeto iniciado a partir de exercícios práticos de curso, sendo adaptado e evoluído com melhorias próprias para consolidar o aprendizado em React e integração com APIs externas.
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Consumo da API do TMDB
+* Listagem dinâmica de filmes populares
+* Renderização de cards com imagem, título e avaliação
+* Interface com campo de busca (em evolução)
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Axios
+* SCSS
+* Vite
+
+## 🌐 API utilizada
+
+The Movie Database (TMDB)
+
+
+
+## 🚧 Melhorias futuras
+
+* Implementar busca funcional de filmes
+* Adicionar tratamento de erro e loading
+* Melhorar organização dos componentes
